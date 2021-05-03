@@ -2,7 +2,7 @@ This program simulates the axon potential.
 
 ### The program can:
 
-	1. plot axon potential ovet time
+	1. plot axon potential over time
   
 	2. plot concentration of open Potassium, Sodium and leaky channels
   
