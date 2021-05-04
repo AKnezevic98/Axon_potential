@@ -1,7 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include <math.h>
-#include <string.h>
 #include "pbPlots.h"
 #include "supportLib.h"
 
@@ -67,7 +64,7 @@ unsigned char main(){
 		return maximum;
 	}
 	
-	double trigger_number(double a[], double t[], double tc, unsigned long int length){
+	double trigger_number(double a[], double t[], unsigned long int length){
 		double num = 0;
 		double last = 0;
 		unsigned long int i=0;
@@ -265,7 +262,7 @@ unsigned char main(){
 			hs[i] = hs[i-1] + dt*(ah(Vs[i-1]) + bh(Vs[i-1]))*(hoo(Vs[i-1])-hs[i-1]);
 		}
 		
-		nums[j] = trigger_number(Vs, ts, tend, N);
+		nums[j] = trigger_number(Vs, ts, N);
 	}
 	
 	
